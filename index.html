@@ -2,18 +2,24 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="Risiko" />
-    <meta name="theme-color" content="#1b1712" />
-    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#171a15" />
+    <meta name="description" content="Schreibt euer echtes Risiko-Brettspiel Zug für Zug am iPad mit – Karte, Truppen, jeder Wurf. Am Ende gibt es den Abschlussbericht mit Würfelglück, Verlauf und Orden. Kostenlos, ohne Anmeldung, offline." />
+    <link rel="icon" href="icon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <title>Risiko-Tracker</title>
-    <script type="module" crossorigin src="./assets/main-DlvgU_sz.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/styles-BgXzdzZk.js">
-    <link rel="stylesheet" crossorigin href="./assets/styles-D9-5uXLN.css">
+    <title>Risiko-Tracker – Ihr würfelt, das iPad führt Buch</title>
+    <script>
+      // Vom Home-Bildschirm gestartet oder ein alter Link ins Spiel (#/game/…): direkt in den Tracker.
+      (function () {
+        var standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+        var appRoute = location.hash.indexOf('#/') === 0;
+        if (appRoute || (standalone && !location.hash)) location.replace('app.html' + location.hash);
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-QHa-64Rf.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/Brand-vREjHZmv.js">
+    <link rel="modulepreload" crossorigin href="./assets/demo-C6knaJaB.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-D_ZC6vP-.css">
   <link rel="manifest" href="./manifest.webmanifest"></head>
   <body>
     <div id="root"></div>

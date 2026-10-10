@@ -1,6 +1,6 @@
 # Risiko-Tracker
 
-Web-App zum Mitschreiben eines echten Risiko-Brettspiels am iPad – mit großer Auswertung am Ende.
+Web-App zum Mitschreiben eines echten Risiko-Brettspiels am iPad – mit Abschlussbericht am Ende.
 
 Dieses Repo enthält nur das fertig gebaute Spiel für GitHub Pages.
 
